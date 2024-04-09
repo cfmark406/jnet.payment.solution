@@ -32,7 +32,12 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.jnet.payment.solution.frmSplashScreen
+            Me.MainForm = Global.jnet.payment.solution.frmLogin
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+        Protected Overrides Sub OnCreateSplashScreen()
+            Me.SplashScreen = Global.jnet.payment.solution.frmSplashScreen
         End Sub
     End Class
 End Namespace
