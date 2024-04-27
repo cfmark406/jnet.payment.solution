@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmWaitLoading
+Partial Class WaitForm
     Inherits DevExpress.XtraWaitForm.WaitForm
 
     'Form overrides dispose to clean up the component list.
@@ -40,10 +40,10 @@ Partial Class frmWaitLoading
         Me.progressPanel1.Location = New System.Drawing.Point(0, 17)
         Me.progressPanel1.Margin = New System.Windows.Forms.Padding(0, 3, 0, 3)
         Me.progressPanel1.Name = "progressPanel1"
-        Me.progressPanel1.Size = New System.Drawing.Size(246, 39)
+        Me.progressPanel1.Size = New System.Drawing.Size(178, 35)
         Me.progressPanel1.TabIndex = 0
         Me.progressPanel1.Text = "progressPanel1"
-        ' 
+        '
         'tableLayoutPanel1
         '
         Me.tableLayoutPanel1.AutoSize = True
@@ -58,24 +58,24 @@ Partial Class frmWaitLoading
         Me.tableLayoutPanel1.Padding = New System.Windows.Forms.Padding(0, 14, 0, 14)
         Me.tableLayoutPanel1.RowCount = 1
         Me.tableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tableLayoutPanel1.Size = New System.Drawing.Size(246, 73)
+        Me.tableLayoutPanel1.Size = New System.Drawing.Size(178, 69)
         Me.tableLayoutPanel1.TabIndex = 1
         '
-        'Form1
+        'WaitForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(246, 73)
+        Me.ClientSize = New System.Drawing.Size(178, 69)
         Me.Controls.Add(Me.tableLayoutPanel1)
         Me.DoubleBuffered = True
-        Me.Name = "Form1"
-        Me.StartPosition = FormStartPosition.Manual
+        Me.Name = "WaitForm"
         Me.Text = "Form1"
-        Me.tableLayoutPanel1.ResumeLayout(false)
+        Me.tableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
+
     End Sub
 
     Private WithEvents progressPanel1 As DevExpress.XtraWaitForm.ProgressPanel

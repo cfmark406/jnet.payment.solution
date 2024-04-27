@@ -1,4 +1,4 @@
-﻿Public Class frmWaitLoading
+﻿Public Class WaitForm
     Sub New
         InitializeComponent()
         Me.progressPanel1.AutoHeight = True
