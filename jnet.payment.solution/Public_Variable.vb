@@ -17,6 +17,7 @@ Module Public_Variable
     Public mycommand As New SqlCommand
     Public myreader As SqlDataReader
     Public _isConnected As Boolean
+    Public query As String
 
 
 

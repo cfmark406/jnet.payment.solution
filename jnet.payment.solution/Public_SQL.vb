@@ -1,5 +1,6 @@
 ﻿
 Imports DevExpress.XtraEditors
+Imports System.Data.SqlClient
 
 Module Public_SQL
 
@@ -7,8 +8,7 @@ Module Public_SQL
     Public Sub get_connected()
 
         _isConnected = False
-
-        myConnectionString = $"Data Source={server_name};User ID=sa;Password=123456;Initial Catalog={db_name}"
+        myConnectionString = $"Data Source={server_name};Initial Catalog={db_name} ;Integrated Security=True"
 
         Try
             conn.ConnectionString = myConnectionString
@@ -20,11 +20,15 @@ Module Public_SQL
             End
         End Try
         _isConnected = True
+
+
     End Sub
 
     Public Sub _restablish_db_connection()
         If conn.State = ConnectionState.Broken Or conn.State = ConnectionState.Closed Then
+  
             get_connected()
+
         End If
     End Sub
 
@@ -46,6 +50,8 @@ Module Public_SQL
             End
         End Try
         _isConnected = True
+
+
     End Sub
 
 End Module
