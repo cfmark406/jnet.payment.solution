@@ -4,14 +4,14 @@ Imports DevExpress.XtraEditors
 Public Class frmLogin
 
     Private Sub loginUserAccount()
-        WaitForm.Show()
+        'WaitForm.Show()
         Dim _username As String = frmLoginTextEditUsername.Text
         Dim _password As String = frmLoginTextEditPassword.Text
         conn.Close()
 
         If AuthenticateUser(_username, _password) Then
             MessageBox.Show("Login successful!")
-            Dim frm As New FluentDesignForm1
+            Dim frm As New frmMain
             frm.Show()
             Me.Hide()
         Else
