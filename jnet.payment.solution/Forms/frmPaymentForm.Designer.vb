@@ -21,6 +21,8 @@ Partial Class frmPaymentForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPaymentForm))
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
+        Me.ComboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.DateEdit5 = New DevExpress.XtraEditors.DateEdit()
         Me.frmPaymentFormBTNSave = New DevExpress.XtraEditors.SimpleButton()
         Me.frmPaymentFormPrintBTN = New DevExpress.XtraEditors.SimpleButton()
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
@@ -28,30 +30,30 @@ Partial Class frmPaymentForm
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.DateEdit5 = New DevExpress.XtraEditors.DateEdit()
         Me.frmPaymentFormDate = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.ComboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.frmPaymentFormReceiptNo = New DevExpress.XtraLayout.SimpleLabelItem()
         Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
+        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.frmPaymentFormDate, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.frmPaymentFormReceiptNo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -69,11 +71,35 @@ Partial Class frmPaymentForm
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
+        'ComboBoxEdit1
+        '
+        Me.ComboBoxEdit1.Location = New System.Drawing.Point(87, 54)
+        Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
+        Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
+        Me.ComboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.ComboBoxEdit1.Size = New System.Drawing.Size(223, 32)
+        Me.ComboBoxEdit1.StyleController = Me.LayoutControl1
+        Me.ComboBoxEdit1.TabIndex = 16
+        '
+        'DateEdit5
+        '
+        Me.DateEdit5.EditValue = Nothing
+        Me.DateEdit5.Location = New System.Drawing.Point(164, 134)
+        Me.DateEdit5.Name = "DateEdit5"
+        Me.DateEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateEdit5.Properties.Appearance.Options.UseFont = True
+        Me.DateEdit5.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit5.Size = New System.Drawing.Size(146, 32)
+        Me.DateEdit5.StyleController = Me.LayoutControl1
+        Me.DateEdit5.TabIndex = 15
+        '
         'frmPaymentFormBTNSave
         '
         Me.frmPaymentFormBTNSave.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.frmPaymentFormBTNSave.Appearance.Options.UseFont = True
-        Me.frmPaymentFormBTNSave.Location = New System.Drawing.Point(12, 182)
+        Me.frmPaymentFormBTNSave.Location = New System.Drawing.Point(12, 188)
         Me.frmPaymentFormBTNSave.Name = "frmPaymentFormBTNSave"
         Me.frmPaymentFormBTNSave.Size = New System.Drawing.Size(300, 30)
         Me.frmPaymentFormBTNSave.StyleController = Me.LayoutControl1
@@ -82,7 +108,7 @@ Partial Class frmPaymentForm
         '
         'frmPaymentFormPrintBTN
         '
-        Me.frmPaymentFormPrintBTN.Appearance.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.frmPaymentFormPrintBTN.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.frmPaymentFormPrintBTN.Appearance.Options.UseFont = True
         Me.frmPaymentFormPrintBTN.ImageOptions.Image = CType(resources.GetObject("frmPaymentFormPrintBTN.ImageOptions.Image"), System.Drawing.Image)
         Me.frmPaymentFormPrintBTN.Location = New System.Drawing.Point(184, 12)
@@ -106,7 +132,7 @@ Partial Class frmPaymentForm
         '
         Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.Root.GroupBordersVisible = False
-        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.frmPaymentFormDate, Me.LayoutControlItem13, Me.frmPaymentFormReceiptNo, Me.EmptySpaceItem2, Me.EmptySpaceItem3, Me.EmptySpaceItem4})
+        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.frmPaymentFormDate, Me.LayoutControlItem13, Me.frmPaymentFormReceiptNo, Me.EmptySpaceItem2, Me.EmptySpaceItem3, Me.EmptySpaceItem4, Me.EmptySpaceItem1})
         Me.Root.Name = "Root"
         Me.Root.Size = New System.Drawing.Size(324, 240)
         Me.Root.TextVisible = False
@@ -135,32 +161,11 @@ Partial Class frmPaymentForm
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.frmPaymentFormBTNSave
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 170)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 176)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Size = New System.Drawing.Size(304, 34)
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem4.TextVisible = False
-        '
-        'EmptySpaceItem3
-        '
-        Me.EmptySpaceItem3.AllowHotTrack = False
-        Me.EmptySpaceItem3.Location = New System.Drawing.Point(0, 160)
-        Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(304, 10)
-        Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'DateEdit5
-        '
-        Me.DateEdit5.EditValue = Nothing
-        Me.DateEdit5.Location = New System.Drawing.Point(164, 134)
-        Me.DateEdit5.Name = "DateEdit5"
-        Me.DateEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateEdit5.Properties.Appearance.Options.UseFont = True
-        Me.DateEdit5.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEdit5.Size = New System.Drawing.Size(146, 32)
-        Me.DateEdit5.StyleController = Me.LayoutControl1
-        Me.DateEdit5.TabIndex = 15
         '
         'frmPaymentFormDate
         '
@@ -174,23 +179,12 @@ Partial Class frmPaymentForm
         Me.frmPaymentFormDate.TextSize = New System.Drawing.Size(26, 13)
         Me.frmPaymentFormDate.TextToControlDistance = 5
         '
-        'ComboBoxEdit1
-        '
-        Me.ComboBoxEdit1.Location = New System.Drawing.Point(47, 54)
-        Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
-        Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
-        Me.ComboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.ComboBoxEdit1.Size = New System.Drawing.Size(263, 32)
-        Me.ComboBoxEdit1.StyleController = Me.LayoutControl1
-        Me.ComboBoxEdit1.TabIndex = 16
-        '
         'LayoutControlItem13
         '
         Me.LayoutControlItem13.Control = Me.ComboBoxEdit1
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(0, 40)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(40, 40)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(304, 40)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(264, 40)
         Me.LayoutControlItem13.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem13.Text = "NAME"
         Me.LayoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
@@ -216,13 +210,29 @@ Partial Class frmPaymentForm
         Me.EmptySpaceItem2.Size = New System.Drawing.Size(119, 40)
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
+        'EmptySpaceItem3
+        '
+        Me.EmptySpaceItem3.AllowHotTrack = False
+        Me.EmptySpaceItem3.Location = New System.Drawing.Point(0, 160)
+        Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(304, 16)
+        Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
+        '
         'EmptySpaceItem4
         '
         Me.EmptySpaceItem4.AllowHotTrack = False
-        Me.EmptySpaceItem4.Location = New System.Drawing.Point(0, 204)
+        Me.EmptySpaceItem4.Location = New System.Drawing.Point(0, 210)
         Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-        Me.EmptySpaceItem4.Size = New System.Drawing.Size(304, 16)
+        Me.EmptySpaceItem4.Size = New System.Drawing.Size(304, 10)
         Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'EmptySpaceItem1
+        '
+        Me.EmptySpaceItem1.AllowHotTrack = False
+        Me.EmptySpaceItem1.Location = New System.Drawing.Point(0, 40)
+        Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(40, 40)
+        Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
         'frmPaymentForm
         '
@@ -235,20 +245,21 @@ Partial Class frmPaymentForm
         Me.Text = "frmPaymentForm"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.frmPaymentFormDate, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.frmPaymentFormReceiptNo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -269,4 +280,5 @@ Partial Class frmPaymentForm
     Friend WithEvents frmPaymentFormReceiptNo As DevExpress.XtraLayout.SimpleLabelItem
     Friend WithEvents EmptySpaceItem2 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents EmptySpaceItem4 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
 End Class
